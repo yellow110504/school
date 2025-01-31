@@ -4,14 +4,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-    <script>
-      var grade ="3"
-      var clas = "6"
-      
-    </script>
     <script src="mobile.js"></script>
-    <script src="schedule.js"></script>
+    <script src="mealmonth.js"></script>
     <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="mealmonth.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -20,10 +16,9 @@
 
     <div class="header">
         <div class="top">
-          <div class="grade">0학년 0반</div>
-        <div class="logo">시간표</div>
-
-</div>
+        <div class="logo">급식표</div>
+        
+</div><a href="./meal.html" id="mov">하루 단위로 보기</a>
 </div>
 <div class="menu">
      <button type="button" class="button-menu" onclick="
@@ -94,16 +89,51 @@
 <div id="body">
   <div id="dat">날짜를 불러 올 수 없습니다.
   </div>
-  <div id="container">급식 정보가 없습니다.
+  <div id="container">
+    <div class="cal" id="1"></div>
+    <div class="cal" id="2"></div>
+    <div class="cal" id="3"></div>
+    <div class="cal" id="4"></div>
+    <div class="cal" id="5"></div>
+    <div class="cal" id="6"></div>
+    <div class="cal" id="7"></div>
+    <div class="cal" id="8"></div>
+    <div class="cal" id="9"></div>
+    <div class="cal" id="10"></div>
+    <div class="cal" id="11"></div>
+    <div class="cal" id="12"></div>
+    <div class="cal" id="13"></div>
+    <div class="cal" id="14"></div>
+    <div class="cal" id="15"></div>
+    <div class="cal" id="16"></div>
+    <div class="cal" id="17"></div>
+    <div class="cal" id="18"></div>
+    <div class="cal" id="19"></div>
+    <div class="cal" id="20"></div>
+    <div class="cal" id="21"></div>
+    <div class="cal" id="22"></div>
+    <div class="cal" id="23"></div>
+    <div class="cal" id="24"></div>
+    <div class="cal" id="25"></div>
+    <div class="cal" id="26"></div>
+    <div class="cal" id="27"></div>
+    <div class="cal" id="28"></div>
+    <div class="cal" id="29"></div>
+    <div class="cal" id="30"></div>
+    <div class="cal" id="31"></div>
+    <div class="cal" id="32"></div>
+    <div class="cal" id="33"></div>
+    <div class="cal" id="34"></div>
+    <div class="cal" id="35"></div>
+    <div class="cal" id="36"></div>
+    <div class="cal" id="37"></div>
+    
   </div>
-  <div id="set">
-    <form action="javascript:setdate()" method="post">
-  <label for="date">날짜 바로가기</label>
-  <input type="date" id="date" max="9999-12-31">
-    <input type="submit" value="확인">
-</form></div>
-<script>document.querySelector("#dat").innerHTML = String(year) + '년 ' + String(month) + '월 ' + String(date) + '일'
-document.querySelector(".grade").innerHTML = grade + '학년 '+ clas + '반'</script>
+  <div id="se">
+<input type="button" id="date1" min="1" max="12" value="&lt; 이전" onclick="setminus()">
+  <input type="button" id="date2" min="1" max="12" value="다음 >" onclick="setdate()">
+  
+  <script>document.querySelector("#dat").innerHTML = String(year) + '년 ' + String(month) + '월 '</script>
 </div>
 </body>
 </html>

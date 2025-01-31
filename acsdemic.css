@@ -1,0 +1,35 @@
+.cal {
+    width: 11.5vw;
+    height: 55px;
+    float: left;
+    font-size: 9px;
+    padding: 0.5vw;
+}
+#container {
+    height: 370px;
+}
+#date1 {
+    width: 100px;
+    height: 40px;
+    font-size: 30px;
+    background-color: transparent;
+    border: 0;
+    margin: auto;
+    float: left;
+    margin: 20px;
+    margin-top: 0;
+}
+#date2 {
+    width: 100px;
+    height: 40px;
+    font-size: 30px;
+    background-color: transparent;
+    border: 0;
+    margin: auto;
+    float: right;
+    margin: 20px;
+    margin-top: 0;
+}
+#body {
+    margin: 0;
+}

@@ -116,7 +116,7 @@ body{
     font-size: 30px;
     padding-bottom: 15px;
     margin-bottom: 15px;
-    margin-top: 40px;
+    margin-top: 30px;
     border-bottom : 1px solid #d4d4d4;
 }
 #set {
@@ -156,4 +156,8 @@ form {
 .grade {
     display: inline-block;
     font-size: 20px;
+}
+#mov {
+    font-size: 15px;
+    margin: 20px;
 }
