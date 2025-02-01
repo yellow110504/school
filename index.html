@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-     <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <script src="mobile.js"></script>
+    <script src="meal.js"></script>
     <link rel="stylesheet" href="mobile.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,7 +87,18 @@
       </ul>
     </div>
 </div>
-    
-안녕하세요
+<div id="body">
+  <div id="dat">날짜를 불러 올 수 없습니다.
+  </div>
+  <div id="container">급식 정보가 없습니다.
+  </div>
+  <div id="set">
+    <form action="javascript:setdate()" method="post">
+  <label for="date">날짜 바로가기</label>
+  <input type="date" id="date" max="9999-12-31">
+    <input type="submit" value="확인">
+</form></div>
+  <script>document.querySelector("#dat").innerHTML = String(year) + '년 ' + String(month) + '월 ' + String(date) + '일'</script>
+</div>
 </body>
 </html>
