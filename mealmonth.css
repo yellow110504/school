@@ -1,10 +1,21 @@
 .cal {
-    width: 13.25vw;
-    height: 130px;
+    width: 19vw;
+    height: 33vw;
     float: left;
-    font-size: 8px;
+    font-size: 2.25vw;
     padding: 0.5vw;
     border-bottom: 0.025px rgb(220, 220, 220) solid;
+}
+.week {
+    width: 19vw;
+    height: 3.75vw;
+    float: left;
+    font-size: 2.25vw;
+    padding: 0.5vw;
+    border-bottom: 0.025px rgb(220, 220, 220) solid;
+}
+.wcal {
+    display: none;
 }
 #container {
     height: 370px;
@@ -38,5 +49,5 @@
 #dat {
     margin-top: 0px;
     margin-bottom: 0px;
-    border-bottom: 0.025px rgb(220, 220, 220) solid;
+    border-bottom: 0;
 }
