@@ -1,0 +1,45 @@
+.cal {
+    width: 16vw;
+    height: 16vw;
+    float: left;
+    font-size: 4vw;
+    padding: 1vw;
+    line-height : 15vw;
+    outline: 0.02px rgb(220, 220, 220) solid ;
+}
+#sdf {
+    width: 8vw;
+    height: 16vw;
+    float: left;
+    font-size: 6vw;
+    padding: 1vw;
+    line-height : 15vw;
+    outline: 0.02px rgb(220, 220, 220) solid ;
+}
+#container {
+    height: 550px;
+}
+#body {
+    margin: 0;
+}
+.week {
+    width: 16vw;
+    height: 6.5vw;
+    float: left;
+    font-size: 4.5vw;
+    outline: 0.02px rgb(220, 220, 220) solid ;
+    padding: 1vw;
+}
+.nweek {
+    width: 8vw;
+    height: 6.5vw;
+    float: left;
+    font-size: 4.5vw;
+    outline: 0.02px rgb(220, 220, 220) solid ;
+    padding: 1vw;
+}
+#dat {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: 0;
+}

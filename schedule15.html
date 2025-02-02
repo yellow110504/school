@@ -12,6 +12,7 @@
     <script src="mobile.js"></script>
     <script src="schedule.js"></script>
     <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="schedule.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -94,14 +95,21 @@
 <div id="body">
   <div id="dat">날짜를 불러 올 수 없습니다.
   </div>
-  <div id="container">급식 정보가 없습니다.
-  </div>
-  <div id="set">
-    <form action="javascript:setdate()" method="post">
-  <label for="date">날짜 바로가기</label>
-  <input type="date" id="date" max="9999-12-31">
-    <input type="submit" value="확인">
-</form></div>
+  <div id="container">
+    <div class="nweek"></div>
+    <div class="week">월</div>
+    <div class="week">화</div>
+    <div class="week">수</div>
+    <div class="week">목</div>
+    <div class="week">금</div>
+  <div id="sdf">1</div>   <div class="cal" id="00"></div>    <div class="cal" id="10"></div>    <div class="cal" id="20"></div>    <div class="cal" id="30"></div>    <div class="cal" id="40"></div> 
+  <div id="sdf">2</div>   <div class="cal" id="01"></div>    <div class="cal" id="11"></div>    <div class="cal" id="21"></div>    <div class="cal" id="31"></div>    <div class="cal" id="41"></div>
+  <div id="sdf">3</div>   <div class="cal" id="02"></div>    <div class="cal" id="12"></div>    <div class="cal" id="22"></div>    <div class="cal" id="32"></div>    <div class="cal" id="42"></div>
+  <div id="sdf">4</div>   <div class="cal" id="03"></div>    <div class="cal" id="13"></div>    <div class="cal" id="23"></div>    <div class="cal" id="33"></div>    <div class="cal" id="43"></div>
+  <div id="sdf">5</div>   <div class="cal" id="04"></div>    <div class="cal" id="14"></div>    <div class="cal" id="24"></div>    <div class="cal" id="34"></div>    <div class="cal" id="44"></div>
+  <div id="sdf">6</div>   <div class="cal" id="05"></div>    <div class="cal" id="15"></div>    <div class="cal" id="25"></div>    <div class="cal" id="35"></div>    <div class="cal" id="45"></div>
+  <div id="sdf">7</div>   <div class="cal" id="06"></div>    <div class="cal" id="16"></div>    <div class="cal" id="26"></div>    <div class="cal" id="36"></div>    <div class="cal" id="46"></div>
+</div>
 <script>document.querySelector("#dat").innerHTML = String(year) + '년 ' + String(month) + '월 ' + String(date) + '일'
 document.querySelector(".grade").innerHTML = grade + '학년 '+ clas + '반'</script>
 </div>
