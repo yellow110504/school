@@ -34,32 +34,30 @@ fetch("https://open.neis.go.kr/hub/misTimetable?KEY=dba1fc9266654cf5921022efad65
     // let spl = str.substring(str.indexOf('"DDISH_NM":"'), str.indexOf('","ORPLC_INFO"'));
 
     var i = 0
+    var ii = 0
     while(i < 5){
       var v = 0
-      while(v < 6){
-
-      var str = data.misTimetable[1].row[v].ITRT_CNTNT
+      while(v < 7){
+        if(data.misTimetable[1].row[ii].PERIO == String(v + 1)) {
+      console.log(String(v + 1))
+      var str = data.misTimetable[1].row[ii].ITRT_CNTNT
       var re = str.replace(/"/g, '');
+      re = re.replace(/\(자\)/g, '');
+      re = re.replace(/\(창\)/g, '');
       console.log(data.misTimetable[1].row[v].ALL_TI_YMD)
       document.getElementById(String(i)+String(v)).innerHTML = re
       if(i == day - 1) {
         document.getElementById(String(i)+String(v)).style.backgroundColor = 'rgb(243, 243, 243)';
           
        }
-      v = v + 1
+      
+      
+    } else {
+      break;
     }
-      if(typeof data.misTimetable[1].row[6] !== 'undefined') {
-
-        var str = data.misTimetable[1].row[6].ITRT_CNTNT
-        var re = str.replace(/"/g, '');
-        console.log(re)
-        document.getElementById(String(i)+String(6)).innerHTML = re
-        if(i == day - 1) {
-          document.getElementById(String(i)+String(v)).style.backgroundColor = 'rgb(243, 243, 243)';
-            
-         }
-        
-     }
+    ii = ii + 1
+    v = v + 1
+    }
      i = i + 1
     }
 
